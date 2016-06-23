@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TODO</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>TODO</title>
+  <%= csrf_meta_tags %>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-  </head>
-  <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-    <%= yield %>
-    <%= javascript_include_tag 'application' %>
-  </body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+</head>
+<body>
+  <%= render 'shared/navbar' %>
+  <%= render 'shared/flashes' %>
+  <%= yield %>
+  <footer class="footer">
+    <p class="text-muted">Profirst copyright</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/ADingValuese/"> <i class="fa fa-facebook fa-2x" target="_blank" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/ad_values"> <i class="fa fa-twitter fa-2x" target="_blank" aria-hidden="true"></i> </a>
+      <a href="https://www.youtube.com/channel/UCYtdg1Xmg596sXsMmTFM4dA"> <i class="fa fa-youtube fa-2x" target="_blank" aria-hidden="true"></i> </a>
+    </div>
+  </footer>
+  <%= javascript_include_tag 'application' %>
+</body>
 </html>

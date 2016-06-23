@@ -1,1 +1,18 @@
 // Your footer style
+.footer {
+  color: white;
+  line-height: 400%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  .fa {
+    color: white;
+  }
+}
+
+.footer p {
+  text-align: center;
+  color: white;
+}
